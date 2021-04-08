@@ -1,7 +1,7 @@
 import './App.css';
 // import Cards from "./Components/Cards/"
 // import SearchBox from "./Components/SearchBox/"
-import HomePage from "./Components/HomePage/"
+import HomePage from "./Pages/HomePage"
 
 import React from 'react';
 

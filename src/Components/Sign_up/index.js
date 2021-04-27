@@ -7,7 +7,7 @@ import { auth, createUserProfileDocument } from "../../firebase/firebase.utils"
 
 import "./Sign_up.styles.scss"
 
-class Sign_up extends React.Component {
+class SignUp extends React.Component {
 
   constructor() {
     super()
@@ -107,4 +107,4 @@ class Sign_up extends React.Component {
 
 }
 
-export default Sign_up;
+export default SignUp;

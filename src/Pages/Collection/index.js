@@ -11,7 +11,7 @@ const CollectionPage = ({ collection }) => {
   console.log(collection)
   return (
     <div className="collection_page">
-      <h2>Collection Page</h2>
+      <h2>Collection Page Boi</h2>
     </div>
   )
 }

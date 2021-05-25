@@ -17,7 +17,7 @@ const onToken = token =>{
       name="Clothes and Clothes, the Clothing Store"
       billingAddress
       shippingAddress
-      image=""
+      image="https://svgshare.com/i/CUz.svg"
       description={`The total is $${price}`}
       amount={priceForStripe}
       panelLabel="Pay Now"

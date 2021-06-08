@@ -12,38 +12,38 @@ import { auth } from '../../firebase/firebase.utils'
 import CartIcon from "../Cart_icon/"
 import CartDropdown from "../Cart_dropdown/"
 
-import "./Header.styles.scss"
+import { HeaderContainer, LogoContainer, OptionsContainer, OptionLink, OptionDiv } from "./Header.styles" 
 
 const Header = ({ currentUser, hidden }) => (
-  <div className="header">
-    <Link className="logo_container" to="/">
+  <HeaderContainer>
+    <LogoContainer to="/">
       <Logo className="logo" />
-    </Link>
-    <div className="options">
-      <Link className="option" to="/shop">
+    </LogoContainer>
+    <OptionsContainer>
+      <OptionLink to="/shop">
         SHOP
-      </Link>
-      <Link className="option" to="/shop">
+      </OptionLink>
+      <OptionLink to="/shop">
         CONTACT
-      </Link>
+      </OptionLink>
       {
         currentUser ? (
-          <div className="option"
+          <OptionDiv
             onClick={() => auth.signOut()}>
             SIGN OUT
-          </div>
+          </OptionDiv>
         ) : (
-          <Link className="option" to="/signin">
+          <OptionLink to="/signin">
             SIGN IN
-          </Link>
+          </OptionLink>
 
         )}
       <CartIcon />
-    </div>
+    </OptionsContainer>
     {
       hidden ? null : <CartDropdown /> 
     }
-  </div>
+  </HeaderContainer>
 )
 
 const mapStateToProps = createStructuredSelector({

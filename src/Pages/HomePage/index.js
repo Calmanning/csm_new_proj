@@ -3,13 +3,15 @@ import Directory from "../../Components/Directory/"
 
 import "./HomePage.styles.scss"
 
+import { HomePageContainer } from "./Homepage.styles"
+
 const HomePage = () => (
 
-  <div className="HomePage">
+  <HomePageContainer>
       
       <Directory />
 
-  </div>
+  </HomePageContainer>
   
 
 )
